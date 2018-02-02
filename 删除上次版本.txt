@@ -1,0 +1,8 @@
+https://www.jianshu.com/p/964de879904a
+
+「Git」合并多个 Commit
+在使用 Git 作为版本控制的时候，我们可能会由于各种各样的原因提交了许多临时的 commit，而这些 commit 拼接起来才是完整的任务。那么我们为了避免太多的 commit 而造成版本控制的混乱，通常我们推荐将这些 commit 合并成一个。
+
+首先假设我们有3个 commit
+我们需要将 2dfbc7e8 和 c4e858b5 合并成一个 commit，那么我们输入如下命令
+其中，-i 的参数是不需要合并的 commit 的 hash 值，这里指的是第一条 commit， 接着我们就进入到 vi 的编辑模式
