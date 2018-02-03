@@ -1,0 +1,29 @@
+Git的配置文件存储在三个地方，分别可以作为全局的作用域，用户级别的作用域和仓库级别的作用域。这些变量分别存储在三个不同的位置：
+
+
+
+1 全局作用域的config文件。
+
+/etc/gitconfig 文件：包含了适用于系统所有用户和所有库的值。如果你传递参数选项’--system’ 给 git config，它将明确的读和写这个文件。如：
+
+git config --system core.editor vim 
+
+
+
+2 用户级别的config文件。
+
+~/.gitconfig 文件 ：具体到你的用户。你可以通过传递--global 选项使Git 读或写这个特定的文件，如
+
+git config --global user.name "Hongchang"
+
+
+
+3 仓库级别的config文件。
+
+位于git目录的config文件 , 也就是 .git/config. 无论你当前在用的库是什么，特定指向该单一的库。每个级别重写前一个级别的值。因此，在.git/config中的值覆盖了在/etc/gitconfig中的同一个值。
+
+
+
+查看一下当前具体使用了哪些配置信息：
+
+git config --list
