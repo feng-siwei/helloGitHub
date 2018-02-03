@@ -1,3 +1,4 @@
 ﻿这是一个测试文件.
 现在应该可以解决乱码问题了
 我加了一个新的分支
+C:\Users\冯思伟\AppData\Local\Temp\Rar$EXaC:\Users\冯思伟\AppData\Local\Temp\Rar$EXaC:\Users\冯思伟\AppData\Local\Temp\Rar$EXa
